@@ -1,0 +1,43 @@
+a:link, a:visited    {
+    color: black; 
+    background-color: cornsilk;     
+    border: 2px outset white;
+    border-radius: 10px; 
+    text-decoration:none;
+    margin-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:active  {
+    color: red; 
+}
+
+#submenu1 {
+    float: left;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 18pt;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 4%;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+}
+
+#submenu2 {
+    float: right;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 12pt;
+    background-color: gold;
+    border-radius: 10px;
+    height: 3%;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+}
+

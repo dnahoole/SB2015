@@ -1,0 +1,55 @@
+html, body {
+    height: 98.5%;
+    width: 100%;
+}
+
+.left-side {
+    float: left;
+    height: 100%;
+    width: 70%;
+    margin: 2px;
+}
+
+.right-side {
+    float: left;
+    height: 100%;
+    width: 28.5%;
+    margin: 2px;
+    overflow: hidden;
+}
+
+#boxRoute, #boxPlace, #boxSearch, #gmStreet {
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 97%;
+    height: 46%;
+    overflow: hidden;
+    padding: 2px;
+    background-color: lightgray;
+    margin: 2px;
+}
+
+#radio-menu {
+    float: left;
+    color: white;
+    font-family: arial, verdana, "san serif";
+    font-size: 14pt;
+    background-color: royalblue;
+    border-radius: 10px;
+    height: 3%;
+    width: 97%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#radio-menu > label {
+    transition: 1s ease-out;
+}
+
+#radio-menu > label:hover { 
+    border-radius: 10px;
+    border: 1px solid black;
+}

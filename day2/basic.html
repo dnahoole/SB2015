@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Google Web Services</title>
+    <link   rel="stylesheet" type="text/css" href="css/gws.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCckMCTYOqMly5Ye8HAa74ijG69vOzBz8Q" type="text/javascript"></script>
+    <script src="js/gws.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <iframe id="gmMain" class="left-side" src=""></iframe>
+    <section class="right-side">
+        <iframe id="gmStreet" src=""></iframe>
+        <div id="radio-menu">
+            <label>
+                <input id="layer1" name="mapLayers" type="radio" checked>Bus Route</label>
+            <label>
+                <input id="layer2" name="mapLayers" type="radio">Places</label>
+            <label>
+                <input id="layer3" name="mapLayers" type="radio">Search</label>
+        </div>
+        <div id="boxRoute">
+            <label>Select route:</label>
+            <select id="myRoute" onchange="gws.showDirections(value)">
+                <option value="Kahului,Wailuku">#1: Kahului to Wailuku</option>
+                <option value="Kahului,Maalaea">#2: Kahului to Ma'alaea</option>
+                <option value="Kahului,S.+Kihei+Rd.">#3: Kahului to Kihei</option>
+                <option value="Kahului,Lahaina">#4: Kahului to Lahaina</option>
+                <option value="Kahului,Pukalani">#5: Kahului to Pukalani</option>
+            </select>
+        </div>
+        <div id="boxPlace" onchange="gws.showPlace()">
+            <input id="btnPlace" type="button" value="Find" onclick="gws.showPlace()">
+            <input id="idPlace" type="text" value="Kahului, HI">
+        </div>
+        <div id="boxSearch"  onchange="gws.showSearch()">
+            <input id="btnSearch" type="button" value="Search" onclick="gws.showSearch()">
+            <input id="idSearch" type="text" value="Kahului, HI">
+            <div>
+                <label>
+                    <input id="cbxBus" name="mapSearch" type="radio">Bus Stops</label>
+                <label>
+                    <input id="cbxRest" name="mapSearch" type="radio">Restaurants</label>
+                <label>
+                    <input id="cbxHosp" name="mapSearch" type="radio">Hospitals</label>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    var gws = new GIS();
+    gws.init();
+</script>
+
+</html>

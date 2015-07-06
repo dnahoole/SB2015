@@ -1,0 +1,84 @@
+.menubox {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    height: 6%;
+    width: 80%;
+    background-color: transparent;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 12pt;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.menubkg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    border-radius: inherit;
+    z-index: inherit;
+}
+
+.epa-menu {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    overflow: hidden;
+    height: 35px;
+    width: 120px;
+    transition: height 1s, width 1s;
+    z-index: 2;
+    border-radius: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.epa-menu:hover {
+    height: 140px;
+    width: 200px;
+}
+
+.menu-tab {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 3px;
+    padding: 3px;
+    color: black;
+    background: gold;
+    border-radius: inherit;
+    border: 1px solid yellow;
+    z-index: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.epa-items {
+    width: auto;
+    height: auto;
+    opacity: 0.9;
+    color: black;
+    background-color: gold;
+    border-radius: inherit;
+    border: 1px solid yellow;
+    z-index: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.coord-menu {
+    position: absolute;
+    top: 1%;
+    left: 86%;
+    height: 35px;
+    width: 140px;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}

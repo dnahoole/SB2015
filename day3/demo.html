@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Maps</title>
+
+    <!-- Google Maps API & D3.js API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry,visualization"></script>
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+
+    <!-- General Data Visualization stylesheet & scripts -->
+    <link rel="stylesheet" type="text/css" href="css/dv.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <script type="text/javascript" src="js/dv.js"></script>
+
+    <!-- Find geographic coordinates interactively -->
+    <script type="text/javascript" src="js/coord.js"></script>
+
+    <!-- Hawaii Open Data:  Census & UH enrollment data -->
+    <script type="text/javascript" src="js/HIData.js"></script>
+    <script type="text/javascript" src="js/UHMC.js"></script>
+
+    <!-- DyGraph:  Graph time-series data  -->
+    <script type="text/javascript" src="js/dygraph-combined.js"></script>
+
+</head>
+
+<body>
+    <div class="menubox">
+        <div class="menubkg"></div>
+        <div id="epabox" class="epa-menu">
+            <div class="menu-tab">Hawaii</div>
+            <div id="epasrc" class="epa-items">
+                <label for="epa0">
+                    <input id="epa0" name="epasvc" type="radio"> Clear
+                </label>
+                <br>
+                <label for="epa2">
+                    <input id="epa2" name="epasvc" type="radio"> UHMC Waypoints</label>
+                <br>
+                <label for="epa4">
+                    <input id="epa4" name="epasvc" type="radio"> Paeloko 2015</label>
+                <br>
+            </div>
+        </div>
+        <div class="coord-menu">
+            <div id="coord" class="menu-tab">
+                <label for="gc0">
+                    <input id="gc0" name="gcsvc" type="checkbox"> Coordinates
+                </label>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="dataset">
+        <div id="summary"></div>
+        <div id="datapoint"></div>
+        <div id="graph"></div>
+        <div id="graphlabel"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    var dv = new DV();
+    var hid = new HiData();
+    var gc = new GeoCoord();
+    var uhmc = new UHMC();
+    var paeloko = new UHMC();
+
+    hid.initialize(dv.map);
+    gc.initialize(dv.map);
+    uhmc.initialize('data/day3waypoints.csv');
+    paeloko.initialize('data/Paeloko2015.csv');
+</script>
+
+</html>

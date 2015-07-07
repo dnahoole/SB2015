@@ -18,16 +18,6 @@
     transition: opacity 1s;
 }
 
-#sect2 img {
-    height: 100%;
-    width: 5%;
-    transition: transform 1s;
-}
-
-#sect2 img:hover {
-    -webkit-transform: scale(15,1) translate(50%,0); 
-    transform: scale(15,1) translate(50%,0); 
-}
 #sect3 iframe {
     height:82px;
     width: 100%;
@@ -35,11 +25,11 @@
 }
 
 #sect3 iframe:hover {
-    height:300px;
+    height:250px;
 }
 
 #sect5 iframe {
-    height: 67px;
+    height: 82px;
     width: 100%;
     transition: 1s;
 }
@@ -73,19 +63,6 @@ a:active  {
     background-color: transparent;
     border-radius: 10px;
     height: 4%;
-    width: auto;
-    padding: 5px;
-    margin: 5px;
-}
-
-#radio-menu {
-    float: right;
-    color: black;
-    font-family: arial, verdana, "san serif";
-    font-size: 12pt;
-    background-color: gold;
-    border-radius: 10px;
-    height: 3%;
     width: auto;
     padding: 5px;
     margin: 5px;
